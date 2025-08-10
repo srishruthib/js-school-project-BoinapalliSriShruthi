@@ -156,7 +156,6 @@ header {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--text-light);
-  /* cursor: pointer; */
   transition: var(--transition);
   font-size: 0.9rem;
   font-weight: 500;
@@ -298,6 +297,38 @@ footer {
   margin-top: auto;
 }
 
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  #timeline::before {
+    left: 20px;
+  }
+
+  .event-marker {
+    width: calc(100% - 50px);
+    margin-left: 40px !important;
+    margin-right: 0 !important;
+    padding: 1.25rem;
+  }
+
+  .event-marker::before,
+  .event-marker:nth-child(even)::before {
+    left: -28px !important;
+    right: auto !important;
+  }
+
+  .nav-filter .filters {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}
+
 /* Tablet View (768px-1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   #timeline {
@@ -335,80 +366,51 @@ footer {
     left: -28px;
     right: auto;
   }
-}
-/* Mobile (up to 767px) */
-@media (max-width: 767px) {
-  header {
-    padding: 0.8rem;
-  }
 
-  #timeline::before {
-    left: 20px;
-  }
+  /* Desktop View (≥1024px) */
 
-  .event-marker {
-    width: calc(100% - 50px);
-    margin-left: 40px !important;
-    margin-right: 0 !important;
-    padding: 1.25rem;
-  }
+  @media (min-width: 1024px) {
+    #timeline {
+      padding: 3rem 0;
+      max-width: 900px; /* or wider */
+      align-items: flex-start;
+    }
 
-  .event-marker::before,
-  .event-marker:nth-child(even)::before {
-    left: -28px !important;
-    right: auto !important;
-  }
+    .event-marker {
+      width: 45%;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
 
-  .nav-filter .filters {
-    flex-direction: column;
-  }
+    /* Odd events on right */
+    .event-marker:nth-child(odd) {
+      margin-left: auto;
+      margin-right: 2%;
+    }
 
-  .filter-btn {
-    width: 100%;
-  }
-}
+    /* Even events on left */
+    .event-marker:nth-child(even) {
+      margin-right: auto;
+      margin-left: 2%;
+    }
 
-@media (min-width: 1024px) {
-  #timeline {
-    padding: 3rem 0;
-    max-width: 900px; /* or wider */
-    align-items: flex-start;
-  }
+    /* Position dots */
+    .event-marker::before {
+      top: 1.5rem;
+      width: 16px;
+      height: 16px;
+    }
 
-  .event-marker {
-    width: 45%;
-    padding: 1.5rem;
-    margin-bottom: 3rem;
-  }
+    /* Dot on left side for odd events (on the right) */
+    .event-marker:nth-child(odd)::before {
+      left: -32px;
+      right: auto;
+    }
 
-  /* Odd events on right */
-  .event-marker:nth-child(odd) {
-    margin-left: auto;
-    margin-right: 2%;
-  }
-
-  /* Even events on left */
-  .event-marker:nth-child(even) {
-    margin-right: auto;
-    margin-left: 2%;
-  }
-
-  /* Position dots */
-  .event-marker::before {
-    top: 1.5rem;
-    width: 16px;
-    height: 16px;
-  }
-
-  /* Dot on left side for odd events (on the right) */
-  .event-marker:nth-child(odd)::before {
-    left: -32px;
-    right: auto;
-  }
-
-  /* Dot on right side for even events (on the left) */
-  .event-marker:nth-child(even)::before {
-    right: -32px;
-    left: auto;
+    /* Dot on right side for even events (on the left) */
+    .event-marker:nth-child(even)::before {
+      right: -32px;
+      left: auto;
+    }
   }
 }
