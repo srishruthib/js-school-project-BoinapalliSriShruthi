@@ -1,41 +1,78 @@
-<!-- This is the HTML skeleton for Task 1, submitted via feature/task-1 branch -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timeline App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <figure class="logo">
-        <img src="logo.png" alt="timeline logo" height="50px" width="50px" />
+        <img src="logo.png" alt="timeline logo" height="50" width="50" />
       </figure>
 
+      <h1 class="header-title">The Dev Horizon</h1>
+
       <div class="theme-toggle">
-        <button id="toggle-button"></button>
+        <label class="toggle-label">
+          <input type="checkbox" class="toggle-checkbox" />
+          <span class="toggle-slider"></span>
+          <span class="toggle-state"></span>
+        </label>
       </div>
     </header>
+
     <nav class="nav-filter">
-      <!-- Filters placeholder -->
+      <div class="filters">
+        <button class="filter-btn">All</button>
+        <button class="filter-btn">Important</button>
+        <button class="filter-btn">Recent</button>
+      </div>
     </nav>
+
     <main>
       <section id="timeline">
         <h2 id="timeline-heading" class="visually-hidden">Timeline Events</h2>
+        <div class="event-marker">
+          <h3>React Developer Meetup</h3>
+          <p>
+            Learn about the latest updates in React and frontend integration
+            with UI design at our local seminar.
+          </p>
+          <small>August 20, 2025 | Central Tech Hub</small>
+        </div>
+        <div class="event-marker">
+          <h3>Javascript with LLM and TTD</h3>
+          <p>
+            Explore the future of web development by integrating Large Language
+            Models and Test-Driven Development.
+          </p>
+          <small>September 10, 2025 | September 10, 2025 | Online Event</small>
+        </div>
+        <div class="event-marker">
+          <h3>GitHub Workshop for Beginners</h3>
+          <p>
+            A hands-on workshop covering the fundamentals of Git and GitHub for
+            version control and collaborative projects.
+          </p>
+          <small>October 5, 2025 | 123 Dev Street, Suite 400</small>
+        </div>
       </section>
 
       <article>
-        <h3>Featured Event</h3>
-        <figure>
-          <figcaption>Event description will appear here.</figcaption>
-        </figure>
+        <a href="#" class="filter-btn">Learn More</a>
       </article>
+
+      <div id="modal">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+        </div>
+      </div>
     </main>
 
-    <div id="modal"></div>
     <footer>
-      <!-- Footer content is placed here -->
+      <p>&copy; 2025 Timeline App. All rights reserved.</p>
     </footer>
   </body>
 </html>
