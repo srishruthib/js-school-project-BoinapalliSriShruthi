@@ -1,49 +1,46 @@
-# Event Timeline Project
+# Timeline App – Task 3
 
-A clean timeline display for showing upcoming events.
+## Overview
 
-# How to Use
+This is the **Task-3** implementation of the Timeline App.  
+In this stage, interactivity is added using **Vanilla JavaScript**. The application now loads events dynamically from a JSON file, renders them into the timeline, and opens a modal with event details when an event is clicked. The modal can also be closed by the user.
 
-1. Download the project folder
-2. Open index.html in any modern browser
-3. The timeline will show sample events
-4. Use the theme toggle in top-right corner
+---
 
-## What's Included
+## Features Implemented in Task-3
 
-- Main timeline page (index.html)
-- CSS styling (styles.css)
-- Sample event data
-- Logo image
+- Added `data/events.json` containing 8+ sample events with:
+  - year
+  - title
+  - description
+  - imageURL
+  - category
+- **Dynamic event rendering** into `#timeline` using `fetch()`.
+- **Click handlers** to open the modal with detailed event info.
+- **Close functionality** for the modal.
+- `index.html` updated to load `script.js` at the end of `<body>`.
 
-## Custom Colors
+---
 
-To change colors, edit these lines in styles.css:
+## Screenshots – Task-3
 
-## Main Colors
+### Mobile View – Modal Open
 
---primary-color: #3498db; /_ Blue _/
---secondary-color: #2ecc71; /_ Green _/
+![Mobile View](images/Mobile-Task3.png)
 
-## Screenshots
+### Tablet View – Modal Open
 
-Mobile View:
-![Mobile view](Mobile-1.png)
-![Mobile view](Mobile-2.png)
-![Mobile view](Mobile-3.png)
-![Mobile view](Mobile-4.png)
+![Tablet View](images/Tablet-Task3.png)
 
-Desktop View:
-![Desktop view](Desktop-1.png)
-![Desktop view](Desktop-2.png)
+### Desktop View – Modal Open
 
-Tablet View:
-![Tablet view](Tablet-1.png)
-![Tablet view](Tablet-2.png)
+![Desktop View](images/Desktop-Task3.png)
 
-## Known Issues
+---
 
-- Theme toggle doesn't save preference
-- Filter buttons not functional yet
+## How to Run
 
---Made by:Boinapalli Sri Shruthi
+1. Clone the repository:
+
+git clone https://github.com/srishruthib/js-school-project-BoinapalliSriShruthi.git
+cd js-school-project-BoinapalliSriShruthi
