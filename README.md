@@ -9,7 +9,7 @@ In this stage, interactivity is added using **Vanilla JavaScript**. The applicat
 
 ## Features Implemented in Task-3
 
-- Added `data/events.json` containing 8+ sample events with:
+- Added `data/events.json` containing 8 sample events with:
   - year
   - title
   - description
