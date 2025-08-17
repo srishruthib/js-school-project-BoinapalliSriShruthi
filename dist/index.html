@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <link rel="icon" href="data:," />
+      <figure class="logo">
+        <img src="logo.png" alt="timeline logo" height="50" width="50" />
+      </figure>
+
+      <h1 class="header-title">The Dev Horizon</h1>
+
+      <div class="theme-toggle">
+        <label class="toggle-label">
+          <input type="checkbox" class="toggle-checkbox" />
+          <span class="toggle-slider"></span>
+          <span class="toggle-state"></span>
+        </label>
+      </div>
+    </header>
+
+    <nav class="nav-filter">
+      <div class="filters">
+        <button class="filter-btn">All</button>
+        <button class="filter-btn">Important</button>
+        <button class="filter-btn">Recent</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="timeline">
+        <h2 id="timeline-heading" class="visually-hidden">Timeline Events</h2>
+      </section>
+
+      <article>
+        <!-- Future content will go here -->
+      </article>
+
+      <div id="modal">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Timeline App. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
