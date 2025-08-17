@@ -1,0 +1,17 @@
+{
+  "name": "timeline-app",
+  "version": "1.0.0",
+  "scripts": {
+  "build": "tsc && xcopy index.html dist\\ /Y && xcopy data\\events.json dist\\ /Y && xcopy styles.css dist\\ /Y && xcopy logo.png dist\\ /Y",
+  "watch": "tsc -w",
+  "serve": "live-server dist --port=3000 --open",
+  "dev": "npm run watch & npm run serve",
+  "clean": "rimraf dist/*",
+  "start": "npm run dev"
+},
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.2"
+  }
+}
