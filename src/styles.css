@@ -49,14 +49,14 @@
 .timeline-item::before {
   content: "";
   position: absolute;
-  top: 50%; /* vertically center */
+  top: 50%; 
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: red; /* DEBUG: make dot visible */
-  border: 4px solid yellow; /* DEBUG: add contrast */
-  z-index: 99999; /* make sure it's on top */
+  background-color: red; 
+  border: 4px solid yellow; 
+  z-index: 99999; 
 }
 
 /* Shift dots slightly left/right so they don’t overlap cards */
@@ -72,7 +72,7 @@
 .timeline-card-wrapper {
   max-width: 45%;
   position: relative;
-  z-index: 5; /* keep cards below dot */
+  z-index: 5; 
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -162,7 +162,7 @@
   }
 
   .timeline-item::before {
-    left: 20px !important; /* align dot with line */
+    left: 20px !important; 
   }
 }
 
