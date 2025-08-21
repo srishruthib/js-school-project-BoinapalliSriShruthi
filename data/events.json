@@ -1,0 +1,66 @@
+[
+  {
+    "year": "August 20, 2025",
+    "title": "React Developer Meetup",
+    "description": "Learn about the latest updates in React and frontend integration with UI design at our local seminar.",
+    "imageURL": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "category": "frontend",
+    "location": "Central Tech Hub"
+  },
+  {
+    "year": "September 10, 2025",
+    "title": "JavaScript with LLM and TDD",
+    "description": "Explore the future of web development by integrating Large Language Models and Test-Driven Development.",
+    "imageURL": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "category": "ai",
+    "location": "Online Event"
+  },
+  {
+    "year": "October 5, 2025",
+    "title": "GitHub Workshop for Beginners",
+    "description": "A hands-on workshop covering the fundamentals of Git and GitHub for version control and collaborative projects.",
+    "imageURL": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2",
+    "category": "tools",
+    "location": "123 Dev Street, Suite 400"
+  },
+  {
+    "year": "November 15, 2025",
+    "title": "CSS Grid & Flexbox Masterclass",
+    "description": "Deep dive into modern CSS layout techniques with practical examples and real-world applications.",
+    "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166",
+    "category": "frontend",
+    "location": "Design Innovation Center"
+  },
+  {
+    "year": "January 12, 2026",
+    "title": "Node.js Performance Optimization",
+    "description": "Learn advanced techniques to optimize your Node.js applications for maximum performance.",
+    "imageURL": "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
+    "category": "backend",
+    "location": "Serverless Conference Hall"
+  },
+  {
+    "year": "February 28, 2026",
+    "title": "Web Accessibility Workshop",
+    "description": "Make your websites accessible to everyone with practical WCAG implementation techniques.",
+    "imageURL": "https://images.unsplash.com/photo-1551650975-87deedd944c3",
+    "category": "frontend",
+    "location": "Inclusive Design Institute"
+  },
+  {
+    "year": "April 5, 2026",
+    "title": "Docker for JavaScript Developers",
+    "description": "Containerize your JavaScript applications for easier deployment and scalability.",
+    "imageURL": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    "category": "devops",
+    "location": "Cloud Computing Expo"
+  },
+  {
+    "year": "June 20, 2026",
+    "title": "Web3 and Blockchain Fundamentals",
+    "description": "Introduction to decentralized applications and smart contract development for web developers.",
+    "imageURL": "https://images.unsplash.com/photo-1639762681057-408e52192e55",
+    "category": "blockchain",
+    "location": "Decentralized Web Summit"
+  }
+]
