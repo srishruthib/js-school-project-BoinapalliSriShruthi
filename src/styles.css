@@ -148,11 +148,6 @@
   color: #d1d9e0 !important;
 }
 
-/* [data-bs-theme="dark"] .timeline-item.timeline-item--active::before {
-  background-color: #ff6b6b;
-  box-shadow: 0 0 0 2px #ff6b6b, 0 0 20px 4px rgba(255, 107, 107, 0.7);
-} */
-
 @media (max-width: 767.98px) {
   #timeline::before {
     left: 20px;
