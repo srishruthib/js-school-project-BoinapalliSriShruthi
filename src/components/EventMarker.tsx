@@ -1,21 +1,42 @@
+import { forwardRef } from "react";
 import type { EventItem } from "../TimelineEvent";
 
 type Props = {
   event: EventItem;
+  isActive: boolean;
+  onSelect: () => void;
+  tabIndex?: number;
 };
 
-export default function EventMarker({
-  event: { title, description, year, location},
-}: Props) {
-  return (
-  <div className="card shadow-sm h-100">
-    <div className="card-body">
-      <h5 className="card-title text-primary">{title}</h5>
-      <p className="card-text">{description}</p>
-      <small className="text-muted">
-        {year} | {location}
-      </small>
-    </div>
-  </div>
+const EventMarker = forwardRef<HTMLButtonElement, Props>(
+  ({ event, isActive, onSelect, tabIndex }: Props, ref) => {
+    const { title, description, year, location } = event;
+
+    return (
+      <button
+        ref={ref}
+        className={`event-marker-btn ${
+          isActive ? "event-marker-btn--active" : ""
+        }`}
+        onClick={onSelect}
+        tabIndex={tabIndex}
+        aria-current={isActive ? "step" : undefined}
+        aria-label={`Event from ${year}: ${title}. ${
+          isActive ? "Currently viewing details" : "View details"
+        }`}
+      >
+        <div className="event-marker-body">
+          <h3 className="event-marker-title">{title}</h3>
+          <p className="event-marker-text">{description}</p>
+          <small className="event-marker-meta">
+            {year} | {location}
+          </small>
+        </div>
+      </button>
+    );
+  }
 );
-}
+
+EventMarker.displayName = "EventMarker";
+
+export default EventMarker;

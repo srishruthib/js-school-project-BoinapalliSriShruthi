@@ -1,5 +1,6 @@
 [
   {
+    "id": "event-1",
     "year": "August 20, 2025",
     "title": "React Developer Meetup",
     "description": "Learn about the latest updates in React and frontend integration with UI design at our local seminar.",
@@ -8,6 +9,7 @@
     "location": "Central Tech Hub"
   },
   {
+    "id": "event-2",
     "year": "September 10, 2025",
     "title": "JavaScript with LLM and TTD",
     "description": "Explore the future of web development by integrating Large Language Models and Test-Driven Development.",
@@ -16,6 +18,7 @@
     "location": "Online Event"
   },
   {
+    "id": "event-3",
     "year": "October 5, 2025",
     "title": "GitHub Workshop for Beginners",
     "description": "A hands-on workshop covering the fundamentals of Git and GitHub for version control and collaborative projects.",
@@ -24,6 +27,7 @@
     "location": "123 Dev Street, Suite 400"
   },
   {
+    "id": "event-4",
     "year": "November 15, 2025",
     "title": "CSS Grid & Flexbox Masterclass",
     "description": "Deep dive into modern CSS layout techniques with practical examples and real-world applications.",
@@ -32,6 +36,7 @@
     "location": "Design Innovation Center"
   },
   {
+    "id": "event-5",
     "year": "January 12, 2026",
     "title": "Node.js Performance Optimization",
     "description": "Learn advanced techniques to optimize your Node.js applications for maximum performance.",
@@ -40,6 +45,7 @@
     "location": "Serverless Conference Hall"
   },
   {
+    "id": "event-6",
     "year": "February 28, 2026",
     "title": "Web Accessibility Workshop",
     "description": "Make your websites accessible to everyone with practical WCAG implementation techniques.",
@@ -48,6 +54,7 @@
     "location": "Inclusive Design Institute"
   },
   {
+    "id": "event-7",
     "year": "April 5, 2026",
     "title": "Docker for JavaScript Developers",
     "description": "Containerize your JavaScript applications for easier deployment and scalability.",
@@ -56,6 +63,7 @@
     "location": "Cloud Computing Expo"
   },
   {
+    "id": "event-8",
     "year": "June 20, 2026",
     "title": "Web3 and Blockchain Fundamentals",
     "description": "Introduction to decentralized applications and smart contract development for web developers.",

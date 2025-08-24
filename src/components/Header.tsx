@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { APP_CONFIG } from "../constants";
 
 export default function Header() {
   const [theme, setTheme] = useState<string>(() => {
@@ -18,24 +19,26 @@ export default function Header() {
     <header>
       <nav
         className={`navbar navbar-expand-lg ${
-          theme === "dark" ? "navbar-dark bg-dark" : "navbar-dark bg-primary"
+          theme === "dark" ? "navbar-dark bg-dark" : "navbar-light bg-primary"
         } px-3`}
       >
-        {/* Logo + Title */}
-        <div className="navbar-brand d-flex align-items-center text-white">
-          <a href="#" className="d-flex align-items-center text-white">
+        <h1 className="navbar-brand d-flex align-items-center mb-0">
+          <a
+            href="#"
+            className="d-flex align-items-center text-white text-decoration-none"
+            aria-label={`${APP_CONFIG.NAME} - Home`}
+          >
             <img
-              src="/logo.png"
-              alt="timeline logo"
+              src={APP_CONFIG.LOGO}
+              alt=""
               height={40}
               width={40}
               className="me-2 rounded-circle"
             />
-            <span className="fw-bold">The Dev Horizon</span>
+            <span className="fw-bold">{APP_CONFIG.NAME}</span>
           </a>
-        </div>
+        </h1>
 
-        {/* Theme Toggle Switch */}
         <section className="ms-auto d-flex align-items-center">
           <div className="form-check form-switch">
             <input
@@ -44,8 +47,12 @@ export default function Header() {
               id="themeSwitch"
               checked={theme === "dark"}
               onChange={toggleTheme}
+              aria-label="Toggle dark mode"
             />
-            <label className="form-check-label text-white" htmlFor="themeSwitch">
+            <label
+              className="form-check-label text-white"
+              htmlFor="themeSwitch"
+            >
               {theme === "dark" ? "Dark" : "Light"}
             </label>
           </div>

@@ -5,7 +5,7 @@ export default function FilterPanel() {
     <nav className="bg-success py-2">
       <div className="container d-flex flex-wrap justify-content-center gap-2">
         {filters.map((filter) => (
-          <button key={filter} className="btn btn-outline-light">
+          <button key={filter} className="btn btn-light">
             {filter}
           </button>
         ))}

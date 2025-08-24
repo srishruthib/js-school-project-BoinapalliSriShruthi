@@ -7,13 +7,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bs-primary: #0a58ca;
+  --bs-secondary: #5a6268;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  /* REMOVE the fixed background color - let Bootstrap handle this */
-  /* background-color: #ffffff; */
   color: #213547;
 }

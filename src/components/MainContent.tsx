@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Timeline from "./Timeline";
 import EventModal from "./EventModal";
 import type { EventItem } from "../TimelineEvent";
-import { MESSAGES, EVENTS_URL } from "../constants"; // ✅ import constants
+import { MESSAGES, EVENTS_URL } from "../constants";
 
 export default function MainContent() {
   const [events, setEvents] = useState<EventItem[]>([]);
@@ -13,14 +13,14 @@ export default function MainContent() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    fetch(EVENTS_URL) // ✅ use constant
+    fetch(EVENTS_URL)
       .then((res) => {
-        if (!res.ok) throw new Error(MESSAGES.ERROR); // ✅ use constant
+        if (!res.ok) throw new Error(MESSAGES.ERROR);
         return res.json();
       })
       .then((data: EventItem[]) => setEvents(data))
       .catch((e: unknown) =>
-        setError(e instanceof Error ? e.message : MESSAGES.ERROR) // ✅ use constant
+        setError(e instanceof Error ? e.message : MESSAGES.ERROR)
       )
       .finally(() => setLoading(false));
   }, []);
@@ -39,11 +39,15 @@ export default function MainContent() {
     <>
       <main className="flex-grow-1">
         <div className="container py-4">
-          {loading && <p className="text-center">{MESSAGES.LOADING}</p>} {/* ✅ use constant */}
+          {loading && <p className="text-center">{MESSAGES.LOADING}</p>}
           {error && <p className="text-danger text-center">{error}</p>}
 
           {!loading && !error && (
-            <Timeline events={events} onSelect={handleSelect} />
+            <Timeline
+              events={events}
+              onSelect={handleSelect}
+              selectedEvent={selected}
+            />
           )}
         </div>
       </main>
