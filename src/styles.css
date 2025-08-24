@@ -55,12 +55,6 @@
   transition: all 0.3s ease;
 }
 
-/* .timeline-item.timeline-item--active::before {
-  background-color: #ff6b6b;
-  box-shadow: 0 0 0 2px #ff6b6b, 0 0 20px 4px rgba(255, 107, 107, 0.5);
-  transform: translate(-50%, -50%) scale(1.2); */
-/* } */
-
 .timeline-card-wrapper {
   max-width: 45%;
   position: relative;
